@@ -42,9 +42,7 @@ Default output format [None]:
 
 # instalar dependencias
 pip install -r requirements.txt
-```
 
----
 
 ## ▶️ Ejecución
 
@@ -54,10 +52,6 @@ pip install -r requirements.txt
 El **producer** envía mensajes JSON a la cola indicada. Puedes elegir el nombre de la cola con `--queue`.
 
 ```bash
-# Windows
-python -m App.Producer.producer --queue Demo-Queue
-
-# Linux/Mac
 python -m App.Producer.producer --queue Demo-Queue
 ```
 
@@ -65,7 +59,6 @@ python -m App.Producer.producer --queue Demo-Queue
 El **consumer** lee mensajes de la cola y los elimina. Si tu consumer tiene un nombre de cola fijo, ajusta el valor en el código o usa el mismo nombre que en el producer.
 
 ```bash
-# Windows / Linux / Mac
 python -m App.Consumer.consumer
 ```
 
@@ -77,5 +70,5 @@ python -m App.Consumer.consumer
 - `producer.py` asegura la existencia de la cola y **publica mensajes** JSON.
 - `consumer.py` **recibe** hasta `MaxNumberOfMessages=10` con **long polling** y **borra** los mensajes procesados.
 
-> Puedes adaptar fácilmente el contenido del mensaje (por ejemplo, tareas, IDs, u otros atributos) y la política de visibilidad/retención de la cola en `functions.py`.
+
 
