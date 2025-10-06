@@ -1,6 +1,6 @@
-# SQS Python — Producer & Consumer (sin Dockerfile)
+# SQS Python — Producer & Consumer
 
-Pequeño proyecto de **portfolio** en Python que muestra un flujo asincrónico _Producer → Queue → Consumer_ utilizando **Amazon SQS** a través de `boto3`. El objetivo es mantener una arquitectura modular (con un paquete `App/`) y ejecutar **localmente** (sin Dockerfile), con soporte para **AWS real** u **opcionalmente LocalStack**.
+Pequeño proyecto de **portfolio** en Python que muestra un flujo asincrónico _Producer → Queue → Consumer_ utilizando **Amazon SQS** a través de `boto3`. El objetivo es mantener una arquitectura modular (con un paquete `App/`) y ejecutar **localmente**, con soporte para **AWS real**.
 
 ---
 
